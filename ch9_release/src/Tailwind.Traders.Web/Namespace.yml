@@ -1,0 +1,5 @@
+# This file configures the $GKE_APP_NAME app which serves public web traffic on port 80
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: $GKE_APP_NAME
