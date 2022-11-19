@@ -7,7 +7,7 @@ env:
   GKE_CLUSTER: my-gke-cluster
   GKE_APP_NAME: testo-demo-shop
   GKE_SERVICE: testo-service
-  GKE_SERVICE_ACCOUNT: rest-serviceaccount
+  GKE_SERVICE_ACCOUNT: ${{ secrets.GKE_SERVICE_ACCOUNT }}
   GKE_DEPLOYMENT_NAME: testo-demo-shop-deployment
   GKE_REGION: us-central1
   GKE_ZONE: us-central1-a
