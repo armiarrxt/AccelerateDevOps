@@ -4,13 +4,13 @@ on: [workflow_dispatch]
 
 env:
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: testo-demo-cluster
+  GKE_CLUSTER: my-gke-cluster
   GKE_APP_NAME: testo-demo-shop
   GKE_SERVICE: testo-service
-  GKE_SERVICE_ACCOUNT: testo-serviceaccount
+  GKE_SERVICE_ACCOUNT: rest-serviceaccount
   GKE_DEPLOYMENT_NAME: testo-demo-shop-deployment
-  GKE_REGION: europe-west3
-  GKE_ZONE: europe-west3-a
+  GKE_REGION: us-central1
+  GKE_ZONE: us-central1-a
   
 jobs:
   Build:
